@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backend_bases import MouseButton
 
 def read1():
-    file_path = '...\Integrated\css saved data 5_5.txt'
+    file_path = 'css saved data 5_5.txt'
     sizeArr = np.loadtxt(file_path, max_rows=1, comments='!', dtype= str)
     print(sizeArr)
     xLen = int(sizeArr[1])
@@ -15,8 +15,6 @@ def read1():
 
     return df, xLen, yLen
 
-def read2():
-    pass
 def inten(matrix, xLen, yLen):          #Matrix contains the data, while xLen and yLen gives size of the 2d region
     maxIntensity = np.zeros((xLen, yLen))
     maxWave = np.zeros((xLen, yLen))
